@@ -1,7 +1,7 @@
 name: Run Gemini CLI
 
 on:
-  workflow_dispatch: # lets you trigger manually
+  workflow_dispatch:
 
 jobs:
   run-gemini:
@@ -18,6 +18,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: gemini --help
+
       - name: Ask Gemini a Question
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
