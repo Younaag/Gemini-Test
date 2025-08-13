@@ -22,4 +22,4 @@ jobs:
       - name: Ask Gemini a Question
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: gemini -p "Hello Gemini, Write a full blog post about how to use ai in 2025"
+        run: gemini -p "Hello Gemini, Write a full blog post about how to use ai in 2025 without askking any questions just do it"
